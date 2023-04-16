@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zebba</title>
+    <link rel="stylesheet" href="/style/all.css">
+    <!-- <link rel="stylesheet" href="/style/button.css"> -->
+    <script src="/Addons/p5/p5.js"></script>
+    <!-- <script src="/Addons/p5/p5.sound.js"></script> -->
+    <!-- <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script> -->
+    <!-- <script src="/jsloader/play.js"></script> -->
+    <!-- <script src="/jsloader/prevpage.js"></script> -->
+</head>
+<style>
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 75%;
+  height: 60%;
+  background-color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 9999; /* 确保它在其他元素的上面 */
+  opacity: 0;
+}
+.center:hover {
+  cursor: pointer;
+  /* 其他样式 */
+}
+.center:active {
+    cursor: url('/Material/ico/cur22.png'), auto;
+  /* 其他样式 */
+}
+</style>
+
+
+
+<body>
+    <div id="click-riminder" style="position: absolute;width: 300px;height: auto;top: 80px;left: 10px;;z-index: 999;">
+        <img src="/Material/remind-click-35.png" alt="image1" style="position: absolute;width: 200px;height: auto;">
+    </div>
+    <div class="center"onclick="toggleGif()"></div>
+
+   
+    <div style="position:relative; height: 80%;">
+        <div style="position: relative;">
+            <img id="logo" src="/Material/gif/first-image/zbera.png" style="position: relative; width: 90%; height: 90%;">
+            <img id="zebba1" src="/Material/ZEBBA.png" style="position:absolute; top: 33%; left: 20%; z-index: 10; width: 60%; " >
+        </div>
+          
+        <div id="gifContainer" style="display:none; position: absolute; top: 0; left: 0; width: 90%; height: 90%;" onclick="toggleGif()">
+            <img src="/Material/gif/zeberafish.gif" style="position: relative; width: 100%; z-index: 0;">
+        </div>
+    </div>
+    
+    <script>
+        function toggleGif() {
+    var logo = document.getElementById("logo");
+    var gifContainer = document.getElementById("gifContainer");
+    var gif = gifContainer.querySelector("img");
+
+    if (gifContainer.style.display === "none") {
+        logo.style.opacity = "0";
+        gif.src = "/Material/gif/zeberafish.gif?_=" + new Date().getTime();
+        gifContainer.style.display = "block";
+    } else {
+        logo.style.opacity = "1";
+        gifContainer.style.display = "none";
+    }
+}
+
+
+
+
+    </script>
+      
+</body>
+</html>

@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zebba</title>
+    <link rel="stylesheet" href="/style/all.css">
+    <style>
+        body {
+            justify-content: center;
+        }
+        .out{
+            position: relative;
+            left: 7%;
+            width: 85vw;
+            height:100vh;
+            top: 165px;
+        }
+        .container{
+            width: 100%;
+            height: 75%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            font-family: "boldfont";
+            color: #a2a2a2;
+        }
+        .yingwen{
+            font-family: "bianzi";
+            color: #1aff00;
+        }
+        .zhongwen{
+            font-family: "fzbianzi";
+        }
+        .container2{
+            top: 4%;
+            position: absolute;
+            width: 100%;
+            height: 75%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            z-index: 99;
+        }
+        .container3{
+            width: 100%;
+            height: 75%;
+            top: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            position: absolute;
+        }
+        .box {
+            flex-basis: calc(25% - 70px);
+            height: 10%;
+            margin: 10px;
+            text-align: center;
+        }
+        .top-img {
+            position: absolute;
+            top: 80px;
+            /* left: 0; */
+            width: 22%; /* 或者使用具体的像素值，例如 width: 200px; */
+            /* height: 100%; */
+            /* flex-basis: calc( - 20px); */
+            margin: 10px;
+            text-align: center;
+        }
+        .top-img2 {
+            position: absolute;
+            top: 38%;
+            /* left: 0; */
+            width: 22%; /* 或者使用具体的像素值，例如 width: 200px; */
+            /* height: 100%; */
+            /* flex-basis: calc( - 20px); */
+            margin: 10px;
+            text-align: center;
+        }
+        .box img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            height: auto;
+        }
+        .box img:hover {
+            cursor: pointer;
+        }
+        .box p {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="xiahuatishi">
+        <span >下滑查看<br>更多信息！</span>
+    </div>
+
+
+    <div id="click-riminder" style="position: absolute;width: 300px;height: auto;top: 80px;left: 10px;;z-index: 999;">
+        <img src="/Material/remind-click-35.png" alt="image1" style="position: absolute;width: 200px;height: auto;">
+    </div>
+
+    <div class = "hualun" style="position: absolute; ">
+        <img id="gunlun" src="/Material/scroll-38.png" >
+</div>
+
+    
+<div class = "out">
+ <div class="container">
+    <div class="box">
+        <img id ="hz" src="/Material/gif/first-image/hz.png" alt="Image 1">
+        <p class="zhongwen">虹鳟</p>
+        <p class="yingwen">Oncorhynchus mykiss</p>
+    </div>
+    <div class="box">
+        <img id ="zhqq" src="/Material/gif/first-image/zhqq.png" alt="Image 2">
+        <p class="zhongwen">中华青鳉</p>
+        <p class="yingwen">Oryzias sinensis</p>
+    </div>
+    <div class="box">
+        <img id ="rbqq" src="/Material/gif/first-image/rbqq.png" alt="Image 3">
+        <p class="zhongwen">日本青鳉</p>
+        <p class="yingwen">Oryzias iaponice</p>
+    </div>
+    <div class="box">
+        <img id ="htdy" src="/Material/gif/first-image/htdy.png" alt="Image 4">
+        <p class="zhongwen">黑头呆鱼</p>
+        <p class="yingwen">Pimephales promelas</p>
+    </div>
+    <div class="box">
+        <img id ="daxingzao" src="/Material/gif/first-image/daxingzao.png" alt="Image 5">
+        <p class="zhongwen">大型蚤</p>
+        <p class="yingwen">Daphnia magna</p>
+    </div>
+    <div class="box">
+        <img id ="youchong" src="/Material/gif/first-image/youchong.png" alt="Image 6">
+        <p class="zhongwen">羽摇蚊幼虫</p>
+        <p class="yingwen">Chironomidae</p>
+    </div>
+    <div class="box">
+        <img id ="liyv" src="/Material/gif/first-image/liyv.png" alt="Image 7">
+        <p class="zhongwen">鲤鱼</p>
+        <p class="yingwen">Cyprinus carpio</p>
+    </div>
+    <div class="box">
+        <img id ="nq" src="/Material/gif/first-image/nq.png" alt="Image 8">
+        <p class="zhongwen">泥鳅</p>
+        <p class="yingwen">Weather loach</p>
+    </div>
+  </div>
+    <div class="container2">
+        <div class="box">
+            <img  src="/Material/gif/outline/hz.png" alt="Image 1"onclick="toggleGif0()">
+        </div>
+        <div class="box">
+            <img  src="/Material/gif/outline/zhqq.png"style="width: 80%;height: auto;;" alt="Image 2"onclick="toggleGif1()">
+            
+        </div>
+        <div class="box">
+            <img  src="/Material/gif/outline/rbqq.png" style="width: 80%;height: auto;"alt="Image 3"onclick="toggleGif2()">
+            
+        </div>
+        <div class="box">
+            <img src="/Material/gif/outline/htdy.png" style="width: 80%;height: auto;"alt="Image 4"onclick="toggleGif3()">
+            
+        </div>
+        <div class="box">
+            <img  src="/Material/gif/outline/daxingzao.png" style="width: 80%;height: auto;"alt="Image 5"onclick="toggleGif4()">
+            
+        </div>
+        <div class="box">
+            <img  src="/Material/gif/outline/youchong.png"style="width: 80%;height: auto;" alt="Image 6"onclick="toggleGif5()">
+            
+        </div>
+        <div class="box">
+            <img  src="/Material/gif/outline/liyv.png" style="width: 80%;height: auto;" alt="Image 7"onclick="toggleGif6()">
+        </div>
+        <div class="box">
+            <img  src="/Material/gif/outline/nq.png" alt="Image 8"onclick="toggleGif7()">
+        </div>
+    </div>
+    
+
+ <div class="container3">
+    <div class="box" >
+        <div>
+        <img id = "hzgif" src="/Material/gif/hz.gif" style="display:none; " onclick="toggleGif0()">
+        </div>
+    </div>
+    <div class="box" >
+        <img id = "zhqqgif" src="/Material/gif/zhqq.gif" style="display:none; " onclick="toggleGif1()">
+    </div>
+    <div class="box" >
+        <img id = "rbqqgif" src="/Material/gif/rbqq.gif" style="display:none; " onclick="toggleGif2()">   
+    </div>
+    <div class="box" >
+        <img id = "htdygif" src="/Material/gif/htdy.gif" style="display:none; " onclick="toggleGif3()">  
+    </div> 
+    <div class="box" > 
+        <img id = "daxingzaogif" src="/Material/gif/daxingzao.gif" style="display:none; " onclick="toggleGif4()">
+    </div> 
+    <div class="box" > 
+        <img id = "youchonggif" src="/Material/gif/youchong.gif" style="display:none; " onclick="toggleGif5()">
+    </div>
+    <div class="box" > 
+        <img id = "liyvgif" src="/Material/gif/liyv.gif" style="display:none; " onclick="toggleGif6()">
+    </div>
+    <div class="box" > 
+        <img id = "nqgif" src="/Material/gif/nq.gif" style="display:none; " onclick="toggleGif7()">
+    </div>
+    </div>
+ </div>
+</div>
+
+</div>
+<div class="a">
+    <img  src="/Material/pictures/bianyi-xia.png" style="width: 100vw;display: block; 
+    margin: 0 auto;">
+</div>
+</body>
+<script>
+function toggleGif0() {
+  var hz = document.getElementById("hz");
+  var hzgif = document.getElementById("hzgif");
+  if (hzgif.style.display === "none") {
+    hz.style.opacity = "0";
+    hzgif.src = "/Material/gif/hz.gif?_=" + new Date().getTime();
+    hzgif.style.display = "block";
+  } else {
+    hz.style.opacity = "1";
+    hzgif.style.display = "none";
+  }
+}
+
+function toggleGif1() {
+  var zhqq = document.getElementById("zhqq");
+  var zhqqgif = document.getElementById("zhqqgif");
+  if (zhqqgif.style.display === "none") {
+    zhqq.style.opacity = "0";
+    zhqqgif.src = "/Material/gif/zhqq.gif?_=" + new Date().getTime();
+    zhqqgif.style.display = "block";
+  } else {
+    zhqq.style.opacity = "1";
+    zhqqgif.style.display = "none";
+  }
+}
+
+function toggleGif2() {
+  var rbqq = document.getElementById("rbqq");
+  var rbqqgif = document.getElementById("rbqqgif");
+  if (rbqqgif.style.display === "none") {
+    rbqq.style.opacity = "0";
+    rbqqgif.src = "/Material/gif/rbqq.gif?_=" + new Date().getTime();
+    rbqqgif.style.display = "block";
+  } else {
+    rbqq.style.opacity = "1";
+    rbqqgif.style.display = "none";
+  }
+}
+
+function toggleGif3() {
+  var htdy = document.getElementById("htdy");
+  var htdygif = document.getElementById("htdygif");
+  if (htdygif.style.display === "none") {
+    htdy.style.opacity = "0";
+    htdygif.src = "/Material/gif/htdy.gif?_=" + new Date().getTime();
+    htdygif.style.display = "block";
+  } else {
+    htdy.style.opacity = "1";
+    htdygif.style.display = "none";
+  }
+}
+
+function toggleGif4() {
+  var daxingzao = document.getElementById("daxingzao");
+  var daxingzaogif = document.getElementById("daxingzaogif");
+  if (daxingzaogif.style.display === "none") {
+    daxingzao.style.opacity = "0";
+    daxingzaogif.src = "/Material/gif/daxingzao.gif?_=" + new Date().getTime();
+    daxingzaogif.style.display = "block";
+  } else {
+    daxingzao.style.opacity = "1";
+    daxingzaogif.style.display = "none";
+  }
+}
+
+function toggleGif5() {
+  var youchong = document.getElementById("youchong");
+  var youchonggif = document.getElementById("youchonggif");
+  if (youchonggif.style.display === "none") {
+    youchong.style.opacity = "0";
+    youchonggif.src = "/Material/gif/youchong.gif?_=" + new Date().getTime();
+    youchonggif.style.display = "block";
+  } else {
+    youchong.style.opacity = "1";
+    youchonggif.style.display = "none";
+  }
+}
+function toggleGif6() {
+    var liyv = document.getElementById("liyv");
+    var liyvgif = document.getElementById("liyvgif");
+    if (liyv.style.opacity === "1") {
+liyv.style.opacity = "0";
+liyvgif.src = "/Material/gif/liyv.gif?_=" + new Date().getTime();
+liyvgif.style.display = "block";
+} else {
+liyv.style.opacity = "1";
+liyvgif.style.display = "none";
+}
+}
+
+function toggleGif7() {
+var nq = document.getElementById("nq");
+var nqgif = document.getElementById("nqgif");
+if (nq.style.opacity === "1") {
+nq.style.opacity = "0";
+nqgif.src = "/Material/gif/nq.gif?_=" + new Date().getTime();
+nqgif.style.display = "block";
+} else {
+nq.style.opacity = "1";
+nqgif.style.display = "none";
+}
+}
+</script>
+</html>
