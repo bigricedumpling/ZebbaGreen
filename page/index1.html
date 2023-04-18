@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Zebba</title>
-    <base href="https://bigricedumpling.github.io/zebbaGreen/">
-    <link rel="stylesheet" href="/style/all.css">
+    <base href="https://bigricedumpling.github.io/zebbaGreen">
+    <link rel="stylesheet" href="https://bigricedumpling.github.io/zebbaGreen/style/all.css">
     <!-- <link rel="stylesheet" href="/style/button.css"> -->
-    <script src="/Addons/p5/p5.js"></script>
+    <script src="https://bigricedumpling.github.io/zebbaGreen/Addons/p5/p5.js"></script>
     <!-- <script src="/Addons/p5/p5.sound.js"></script> -->
     <!-- <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script> -->
     <!-- <script src="/jsloader/play.js"></script> -->
@@ -25,16 +25,16 @@
   border-radius: 50%;
   z-index: 9999; /* 确保它在其他元素的上面 */
   opacity: 0;
-  cursor: url("/Material/hover1.png"),auto;
+  cursor: url("https://bigricedumpling.github.io/zebbaGreen/Material/hover1.png"),auto;
 }
 
 .center:hover{
-    cursor: url("/Material/hover1.png"),auto;
+    cursor: url("https://bigricedumpling.github.io/zebbaGreen/Material/hover1.png"),auto;
 }
 
 
 .center:active {
-    cursor: url('/Material/ico/cur22.png'), auto;
+    cursor: url('https://bigricedumpling.github.io/zebbaGreen/Material/ico/cur22.png'), auto;
   /* 其他样式 */
 }
 </style>
@@ -43,19 +43,19 @@
 
 <body>
     <div id="click-riminder" style="position: absolute;width: 300px;height: auto;top: 80px;left: 10px;;z-index: 999;">
-        <img src="/Material/remind-click-35.png" alt="image1" style="position: absolute;width: 200px;height: auto;">
+        <img src="https://bigricedumpling.github.io/zebbaGreen/Material/remind-click-35.png" alt="image1" style="position: absolute;width: 200px;height: auto;">
     </div>
     <div class="center"onclick="toggleGif()"></div>
 
    
     <div style="position:relative; height: 80%;">
         <div style="position: relative;">
-            <img id="logo" src="/Material/gif/first-image/zbera.png" style="position: relative; width: 90%; height: 90%;">
-            <img id="zebba1" src="/Material/ZEBBA.png" style="position:absolute; top: 33%; left: 20%; z-index: 10; width: 60%; " >
+            <img id="logo" src="https://bigricedumpling.github.io/zebbaGreen/Material/gif/first-image/zbera.png" style="position: relative; width: 90%; height: 90%;">
+            <img id="zebba1" src="https://bigricedumpling.github.io/zebbaGreen/Material/ZEBBA.png" style="position:absolute; top: 33%; left: 20%; z-index: 10; width: 60%; " >
         </div>
           
         <div id="gifContainer" style="display:none; position: absolute; top: 0; left: 0; width: 90%; height: 90%;" onclick="toggleGif()">
-            <img src="/Material/gif/zeberafish.gif" style="position: relative; width: 100%; z-index: 0;">
+            <img src="https://bigricedumpling.github.io/zebbaGreen/Material/gif/zeberafish.gif" style="position: relative; width: 100%; z-index: 0;">
         </div>
     </div>
     
@@ -67,7 +67,7 @@
 
     if (gifContainer.style.display === "none") {
         logo.style.opacity = "0";
-        gif.src = "/Material/gif/zeberafish.gif?_=" + new Date().getTime();
+        gif.src = "https://bigricedumpling.github.io/zebbaGreen/Material/gif/zeberafish.gif?_=" + new Date().getTime();
         gifContainer.style.display = "block";
     } else {
         logo.style.opacity = "1";
