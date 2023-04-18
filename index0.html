@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>拯救斑斑</title>
+    <link rel="stylesheet" href="/Addons/swiper/swiper-bundle.css">  
+    <link rel="stylesheet" href="/style/all.css">
+    <link rel="icon" href="/Material/ico/cur22.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/Material/ico/cur22.png" type="image/x-icon">
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+
+    <style>
+     @media screen and (max-width: 768px)  {
+        body {
+          transform: rotate(-90deg);
+          transform-origin: left top;
+          width: 100vh;
+          overflow-x: hidden;
+          position: absolute;
+          top: 100%;
+          left: 0;
+        }
+        /* 添加你的其他 CSS 样式 */
+      }
+
+      .header {
+        display: flex; /* 设置容器的布局为弹性布局 */
+        /* justify-content: space-between; 设置图片的间距为容器宽度的剩余空间 */
+        align-items: center; /* 设置图片垂直居中 */
+        position: fixed; /* 设置容器的定位方式为固定定位 */
+        top: 0; /* 设置容器距离窗口顶部的距离为0 */
+        width: 100vw; /* 设置容器的宽度为100% */
+        height: 8%;
+        background-color: #ffffffd3;
+        align-items: center;
+        z-index: 100;
+        left: 1%;
+      }
+      .wenzi {
+
+        display: flex; /* 设置容器的布局为弹性布局 */
+        justify-content: space-between; /* 设置图片的间距为容器宽度的剩余空间 */
+        align-items: center; /* 设置图片垂直居中 */
+        position: fixed; /* 设置容器的定位方式为固定定位 */
+        top: 2%; /* 设置容器距离窗口顶部的距离为0 */
+        left: 68%;
+        width: 30%; /* 设置容器的宽度为100% */
+        height: auto;
+        display: flex;
+        align-items:center;
+        z-index: 100;
+      }
+
+      .header img {
+         height: 80px; /* 设置图片的高度 */
+
+      }
+
+
+
+
+
+
+
+      </style>
+      
+
+    <style>
+      .swiper-container {
+        width: 100vw;
+        height: 100vh;
+      }
+      .swiper-slide {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 36px;
+      }
+
+      
+
+    </style>
+  </head>
+  <body>
+
+
+
+    <div class="header">
+      <img src="/Material/pictures/header-name-16.png" style="width: 12%
+      ;height: auto; " alt="image1">
+      <div class = "wenzi">
+        <a id = "fishhead" href="#" onclick="goToSlide(0)" ><img src="/Material/pictures/header_head-green-33.png" alt="image2" style="width: 35px;height:auto"></a>
+      <a id = "head-watercycle" href="#" onclick="goToSlide(1)"><span>水循环</span></a>
+      <a id = "head-zebbrafish" href="#" onclick="goToSlide(2)"><span>斑马鱼</span></a>
+      <a id = "head-poison" href="#" onclick="goToSlide(3)"><span>毒性实验</span></a>
+      <a id = "head-guess" href="#" onclick="goToSlide(6)"><span>变异猜想</span></a>
+      <a id = "fishtail" href="#" onclick="goToSlide(7)"><img src="/Material/pictures/header_tail-17-32.png" alt="image2"style="width: 45px;height:auto;">
+    </div>
+      
+    </div>
+    
+
+    
+
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div id="page1"><iframe src="/page/index1.html" frameborder="0" style="width: 100vw; height: 100vh;"></iframe></div>
+        </div>
+
+        <div class="swiper-slide">
+          <div id="page2"><iframe src="/page/index1a.html" frameborder="0" style="width: 100vw; height: 100vh;"></iframe></div>
+        </div>
+
+        <div class="swiper-slide">
+          <div id="page3"><iframe src="/page/index1b.html" frameborder="0" style="width: 100vw; height: 100vh;"></iframe></div>
+        </div>
+
+        <div class="swiper-slide">
+          <div id="page4"><iframe src="/page/index.html "frameborder="0" style="width: 100vw; height: 100vh;"></iframe></div>
+        </div>
+
+        <div class="swiper-slide">
+          <div id="page5"><iframe src="/page/index.html "frameborder="0" style="width: 100vw; height: 100vh;"></iframe></div>
+        </div>
+
+        <div class="swiper-slide">
+          <div id="page6"><iframe src="/page/index4.html" frameborder="0" style="width: 100vw; height: 100vh;"></iframe></div>
+        </div>
+
+        <div class="swiper-slide">
+          <div id="page7"><iframe src="/page/index5.html" frameborder="0" style="width: 100vw; height: 100vh;"></iframe></div>
+        </div>
+
+        <div class="swiper-slide">
+          <div id="page8"><iframe src="/page/index6.html" frameborder="0" style="width: 100vw; height: 100vh;"></iframe></div>
+        </div>
+
+      </div>
+      <!-- 分页器 -->
+      <!-- <div class="swiper-pagination"></div> -->
+      <!-- 前进/后退按钮 -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+
+    <script src="/Addons/swiper/swiper-bundle.js"></script>
+    <script>
+      // 初始化swiper
+      var mySwiper = new Swiper('.swiper-container', {
+          // 横向滑动
+          direction: 'horizontal',
+          // 自动播放
+          //   autoplay: {
+          //     delay: 5000,
+          //   },
+          // 分页器
+          pagination: {
+              el: '.swiper-pagination',
+          },
+          // 前进/后退按钮
+          navigation: {
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
+          },
+  
+          // 回调函数，在每次切换到新页面时触发
+          on: {
+            
+              slideChange: function () {
+                  // 获取当前页面的索引
+                  var currentIndex = mySwiper.activeIndex;
+                  var iframes = document.querySelectorAll('iframe');
+                   
+  
+                  // 根据索引加载对应的页面
+                  switch (currentIndex) {
+                      case 0:
+                      var element = document.querySelector("#fishhead img");
+// 替换图片URL
+element.src = '/Material/pictures/header_head-green-33.png';
+
+var element = document.querySelector("#head-watercycle");
+// 移除下划线样式
+element.style.textDecoration = "none";
+element.style.textDecorationColor = "initial";
+element.style.paddingBottom = "initial";
+
+
+                      document.querySelector('#page1').innerHTML = '<iframe src="/page/index1.html" frameborder="0" style="width: 100vw; height: 100vh;"></iframe>';   
+                       
+  break;
+    
+    break;
+
+
+  // 获取需要添加下划线的元素
+
+var element = document.querySelector("#head-watercycle");
+// 移除下划线样式
+element.style.textDecoration = "none";
+element.style.textDecorationColor = "initial";
+element.style.paddingBottom = "initial";
+
+
+
+                          break;
+  
+                      case 1:
+                      document.querySelector('#page1').innerHTML = '<iframe src="/page/index.html" frameborder="0" style="width: 100vw; height: 100vh;"></iframe>';   
+                      // 获取需要修改的元素
+var element = document.querySelector("#fishhead img");
+// 替换图片URL
+element.src = '/Material/pictures/header_head-17.png';
+
+
+                          // 强制加载第二个页面
+                          // 获取需要添加下划线的元素
+                          var element = document.querySelector("#head-watercycle");
+
+// 添加下划线样式
+element.style.textDecoration = "underline";
+element.style.textDecorationColor = "#5CFF54";
+element.style.textDecorationThickness = "4px"; // 调整下划线宽度
+var element = document.querySelector("#head-zebbrafish");
+// 移除下划线样式
+element.style.textDecoration = "none";
+element.style.textDecorationColor = "initial";
+element.style.paddingBottom = "initial";
+  
+                          break;
+                      case 2:
+                      
+// 获取需要修改的元素
+var element = document.querySelector("#head-watercycle");
+// 移除下划线样式
+element.style.textDecoration = "none";
+element.style.textDecorationColor = "initial";
+element.style.paddingBottom = "initial";
+
+var element = document.querySelector("#head-zebbrafish");
+// 添加下划线样式
+element.style.textDecoration = "underline";
+element.style.textDecorationColor = "#5CFF54";
+element.style.textDecorationThickness = "4px"; // 调整下划线宽度
+var element = document.querySelector("#head-poison");
+// 移除下划线样式
+element.style.textDecoration = "none";
+element.style.textDecorationColor = "initial";
+element.style.paddingBottom = "initial";
+
+
+                      var iframe3 = document.querySelector('#page3 > iframe');
+                      if (iframe3) {
+                       document.querySelector('#page4').innerHTML = '<iframe src=" /page/index.html"frameborder="0" style="width: 100vw; height: 100vh;></iframe>'; 
+                 
+                     
+                    
+                       } else {
+                          iframe4.contentWindow.location.reload();
+                          console.log(document.querySelector('#page4'));
+                          document.querySelector('#page4').innerHTML = '<iframe src="/page/index2.html" frameborder="0" style="width: 100vw; height: 100vh;"></iframe>';
+                          
+                }
+                      break;
+  
+                      case 3:
+
+                      // 获取需要修改的元素
+
+  
+
+
+                      var iframe4 = document.querySelector('#page4 > iframe');
+                      if (iframe4) {
+                        document.querySelector('#page4').innerHTML = '<iframe src="/page/index2.html" frameborder="0" style="width: 100vw; height: 100vh;"></iframe>'; 
+                        document.querySelector('#page5').innerHTML = '<iframe src="/page/index.html"frameborder="0" style="width: 100vw; height: 100vh;></iframe>'; 
+                     } else {
+                    console.log(document.querySelector('#page4'));
+                    document.querySelector('#page4').innerHTML = '<iframe src="/page/index2.html" frameborder="0" style="width: 100vw; height: 100vh;"></iframe>';                         
+                   }    
+                   
+                   var element = document.querySelector("#head-zebbrafish");
+// 移除下划线样式
+element.style.textDecoration = "none";
+element.style.textDecorationColor = "initial";
+element.style.paddingBottom = "initial";
+
+var element = document.querySelector("#head-poison");
+// 添加下划线样式
+element.style.textDecoration = "underline";
+element.style.textDecorationColor = "#5CFF54";
+element.style.textDecorationThickness = "4px"; // 调整下划线宽度
+
+                      break;
+  
+                      case 4:   
+     
+
+                      document.querySelector('#page4').innerHTML = '<iframe src="/page/index.html" frameborder="0" style="width: 100vw; height: 100vh;"></iframe>';            
+                        document.querySelector('#page5').innerHTML = '<iframe src="/page/index3.html" frameborder="0" style="width: 100vw; height: 100vh;"></iframe>';
+                         
+                      break;
+  
+                      case 5:
+                      var element = document.querySelector("#head-guess");
+// 移除下划线样式
+element.style.textDecoration = "none";
+element.style.textDecorationColor = "initial";
+element.style.paddingBottom = "initial";
+
+var element = document.querySelector("#head-poison");
+// 添加下划线样式
+element.style.textDecoration = "underline";
+element.style.textDecorationColor = "#5CFF54";
+element.style.textDecorationThickness = "4px"; // 调整下划线宽度
+var element = document.querySelector("#fishtail. img");
+
+// 替换图片URL
+element.src = '/Material/pictures/header_head-green-32.png';
+                      
+                      document.querySelector('#page5').innerHTML = '<iframe src="/page/index.html"frameborder="0" style="width: 100vw; height: 100vh;></iframe>';
+                        document.querySelector('#page4').innerHTML = '<iframe src="/page/index.html "frameborder="0" style="width: 100vw; height: 100vh;></iframe>'; 
+  
+                          break;
+  
+                      case 6:
+
+var element = document.querySelector("#head-guess");
+// 添加下划线样式
+element.style.textDecoration = "underline";
+element.style.textDecorationColor = "#5CFF54";
+element.style.textDecorationThickness = "4px"; // 调整下划线宽度
+var element = document.querySelector("#head-poison");
+// 移除下划线样式
+element.style.textDecoration = "none";
+element.style.textDecorationColor = "initial";
+element.style.paddingBottom = "initial";
+var element = document.querySelector("#fishtail img");
+
+// 替换图片URL
+element.src = '/Material/pictures/header_tail-17-32.png';
+                   break;
+                   case 7:
+                   var element = document.querySelector("#head-guess");
+// 移除下划线样式
+element.style.textDecoration = "none";
+element.style.textDecorationColor = "initial";
+element.style.paddingBottom = "initial";
+
+var element = document.querySelector("#fishtail img");
+
+// 替换图片URL
+element.src = '/Material/pictures/header_head-green-34.png';
+  
+                          break;
+  
+                      default:
+                          break;
+                  }
+                   
+              },
+             
+          }
+      })
+//       function goToSlide(slideIndex) {
+//     mySwiper.slideTo(slideIndex);
+//     mySwiper.update();
+// }
+
+
+function goToSlide(currentIndex) {
+  // 根据索引值来判断要展示哪个幻灯片
+  switch (currentIndex) {
+    case 0:
+      // 如果当前是第一个幻灯片，则展示第一个幻灯片的内容
+      // TODO: 展示第一个幻灯片的内容
+      break;
+    case 1:
+      // 如果当前是第二个幻灯片，则展示第二个幻灯片的内容
+      // TODO: 展示第二个幻灯片的内容
+      break;
+    case 2:
+      // 如果当前是第三个幻灯片，则展示第三个幻灯片的内容
+      // TODO: 展示第三个幻灯片的内容
+      break;
+    case 3:
+      // 如果当前是第四个幻灯片，则展示第四个幻灯片的内容
+      // TODO: 展示第四个幻灯片的内容
+      break;
+    case 4:
+    document.querySelector('#page5').innerHTML = '<iframe src="/page/index3.html" frameborder="0" style="width: 100vw; height: 100vh;"></iframe>';
+      break;
+    case 5:
+      // 如果当前是第六个幻灯片，则展示第六个幻灯片的内容
+      // TODO: 展示第六个幻灯片的内容
+      break;
+    case 6:
+      // 如果当前是第七个幻灯片，则展示第七个幻灯片的内容
+      // TODO: 展示第七个幻灯片的内容
+      break;
+    case 7:
+      // 如果当前是第八个幻灯片，则展示第八个幻灯片的内容
+      // TODO: 展示第八个幻灯片的内容
+      break;
+    default:
+      // 如果当前索引值不在 0 到 7 之间，则什么也不做
+      break;
+  }
+}
+
+  </script>
+
+  
+  
+  </body>
+</html>
