@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/style/all.css">
     <link rel="icon" href="/Material/ico/cur22.png" type="image/x-icon">
     <link rel="shortcut icon" href="/Material/ico/cur22.png" type="image/x-icon">
+  
     
     <style>
      @media screen and (max-width: 768px)  {
@@ -48,8 +49,9 @@
         display: flex;
         align-items:center;
         z-index: 100;
+        
       }
-
+   
       .header img {
          height: 80px; /* 设置图片的高度 */
 
@@ -57,6 +59,21 @@
 
 
 
+      .retry{
+        position: fixed;
+        top: 89vh;
+        right: 7vw;
+        z-index: 999;
+        cursor: url("/Material/hover1.png"),auto;
+    }
+
+    .retry:hover{
+        cursor: url("/Material/hover1.png"),auto;
+    }
+    .retry:hover img{
+        content: url("/Material/retry2.png");
+        cursor: url("/Material/hover1.png"),auto;
+    }
 
 
 
@@ -84,18 +101,20 @@
   </head>
   <body>
 
-
+    <div class="retry">
+      <img src="/Material/retry1.png" alt="image3" style="width:40px;height: auto;">
+  </div>
 
     <div class="header">
       <img src="/Material/pictures/header-name-16.png" style="width: 12%
       ;height: auto; " alt="image1">
       <div class = "wenzi">
-        <a id = "fishhead" href="#" onclick="goToSlide(0)" ><img src="/Material/pictures/header_head-green-33.png" alt="image2" style="width: 35px;height:auto"></a>
-      <a id = "head-watercycle" href="#" onclick="goToSlide(1)"><span>水循环</span></a>
-      <a id = "head-zebbrafish" href="#" onclick="goToSlide(2)"><span>斑马鱼</span></a>
-      <a id = "head-poison" href="#" onclick="goToSlide(3)"><span>毒性实验</span></a>
-      <a id = "head-guess" href="#" onclick="goToSlide(6)"><span>变异猜想</span></a>
-      <a id = "fishtail" href="#" onclick="goToSlide(7)"><img src="/Material/pictures/header_tail-17-32.png" alt="image2"style="width: 45px;height:auto;">
+        <a id = "fishhead" href="#"  ><img src="/Material/pictures/header_head-green-33.png" alt="image2" style="width: 35px;height:auto"></a>
+      <a id = "head-watercycle" href="#" ><span>水循环</span></a>
+      <a id = "head-zebbrafish" href="#" ><span>斑马鱼</span></a>
+      <a id = "head-poison" href="#" ><span>毒性实验</span></a>
+      <a id = "head-guess" href="#" ><span>变异猜想</span></a>
+      <a id = "fishtail" href="#" ><img src="/Material/pictures/header_tail-17-32.png" alt="image2"style="width: 45px;height:auto;">
     </div>
       
     </div>
@@ -164,15 +183,17 @@
               nextEl: '.swiper-button-next',
               prevEl: '.swiper-button-prev',
           },
-  
+          
           // 回调函数，在每次切换到新页面时触发
           on: {
+            
+
             
               slideChange: function () {
                   // 获取当前页面的索引
                   var currentIndex = mySwiper.activeIndex;
                   var iframes = document.querySelectorAll('iframe');
-                   
+    
   
                   // 根据索引加载对应的页面
                   switch (currentIndex) {
@@ -315,8 +336,7 @@ var element = document.querySelector("#head-poison");
 element.style.textDecoration = "underline";
 element.style.textDecorationColor = "#5CFF54";
 element.style.textDecorationThickness = "4px"; // 调整下划线宽度
-var element = document.querySelector("#fishtail. img");
-
+var element = document.querySelector("#fishtail.img");
 // 替换图片URL
 element.src = '/Material/pictures/header_head-green-32.png';
                       
@@ -326,7 +346,7 @@ element.src = '/Material/pictures/header_head-green-32.png';
                           break;
   
                       case 6:
-
+                 
 var element = document.querySelector("#head-guess");
 // 添加下划线样式
 element.style.textDecoration = "underline";
@@ -338,9 +358,13 @@ element.style.textDecoration = "none";
 element.style.textDecorationColor = "initial";
 element.style.paddingBottom = "initial";
 var element = document.querySelector("#fishtail img");
-
 // 替换图片URL
 element.src = '/Material/pictures/header_tail-17-32.png';
+
+
+
+
+
                    break;
                    case 7:
                    var element = document.querySelector("#head-guess");
@@ -350,9 +374,25 @@ element.style.textDecorationColor = "initial";
 element.style.paddingBottom = "initial";
 
 var element = document.querySelector("#fishtail img");
-
 // 替换图片URL
 element.src = '/Material/pictures/header_head-green-34.png';
+
+
+// 找到最后一页的按钮并将其图像更改为retry2.png
+var nextButton = this.navigation.nextEl;
+if (this.isEnd) {
+  nextButton.style.backgroundImage = 'url(/Material/retry2.png)';
+}
+
+// 为下一页按钮添加点击事件，点击时刷新页面
+nextButton.addEventListener('click', function() {
+  location.reload();
+});
+
+
+// <div class="retry">
+//     <img src="/Material/retry.png" alt="image3" style="width:50px;height: auto;cursor: pointer;">
+// </div>
   
                           break;
   
@@ -411,8 +451,26 @@ function goToSlide(currentIndex) {
 }
 
   </script>
+ <script>
+  const retryDiv = document.querySelector('.retry');
 
-  
+retryDiv.addEventListener('click', () => {
+  // 跳转到新页面
+window.location.href = '/page/index0.html';
+
+
+
+});
+
+const retryDiv2 = document.querySelector('.retry2');
+
+retryDiv2.addEventListener('click', () => {
+  // 跳转到新页面
+window.location.href = '/page/index0.html';
+
+
+});
+</script>
   
   </body>
 </html>

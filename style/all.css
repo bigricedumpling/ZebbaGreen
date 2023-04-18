@@ -20,6 +20,8 @@ body {
   cursor: url('/Material/ico/cur11.png'), auto;
   /* overflow: hidden; */
 }
+
+
 .header a {
   text-decoration: none; /* 取消下划线 */
   color: #878787; /* 修改字体颜色 */
@@ -37,21 +39,32 @@ body {
 
 .header .wenzi a:hover span {
   font-family: "boldfont"; /* 鼠标 hover 时修改字体 */
+  cursor: url("/Material/hover1.png"),auto;
+  cursor: url("/Material/hover1.png"),auto;
 }
 
 #fishhead:hover img {
   content: url('/Material/pictures/header_head-green-33.png');
+  cursor: url("/Material/hover1.png"),auto;
 }
 #fishtail:hover img {
   content: url('/Material/pictures/header_head-green-34.png');
+  cursor: url("/Material/hover1.png"),auto;
 }
+
 /* *:hover {
-  cursor: url('/Material/cur22.png'), auto;
+  cursor: url('/Material/hover.png'), auto;
 } */
 
 *:active {
   cursor: url('/Material/ico/cur22.png'), auto;
 }
+
+
+.swiper-button-prev:hover{
+  cursor: url("/Material/hover1.png"),auto;
+}
+
 
 .swiper-button-prev {
 
@@ -60,7 +73,7 @@ body {
   background-repeat: no-repeat; /* 禁止背景图片平铺 */
   background-position: center center;
   left: 3%;
-  
+
 }
 
 .swiper-button-next {
@@ -79,12 +92,12 @@ body {
   height: 49px;
   margin-top: -16px;
   z-index: 10;
-  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
   /* color: var(--swiper-navigation-color, var(--swiper-theme-color)); */
   scale: 1.5;
+  cursor: url("/Material/hover1.png"),auto;
 }
 .swiper-button-next:hover,
 .swiper-button-prev:hover {
@@ -94,7 +107,7 @@ width: 49px;
 height: 46px;
 margin-top: -15px;
 z-index: 10;
-cursor: pointer;
+cursor: url("/Material/hover1.png"),auto;
 display: flex;
 align-items: center;
 justify-content: center;
@@ -167,10 +180,27 @@ justify-content: center;
 .xiahuatishi{
   position: absolute;
   font-family: "mediumfont";
-  font-size:larger;
-  top: 83.5vh;
-  right: 1vh;
+  font-size:25px;
+  top: 90vh;
+  right: 43.5vw;
   color: rgb(29, 255, 48);
   z-index: 99;
   line-height: 1.5rem;
+  opacity: 1;
+}
+
+
+.retry{
+  position: absolute;
+  top: 90vh;
+  right: 1vw;
+  z-index: 999;
+  cursor: url("/Material/hover1.png"),auto;
+}
+.retry:hover{
+  cursor: url("/Material/hover1.png"),auto;
+}
+.retry:hover img{
+  content: url("/Material/retry2.png");
+  cursor: url("/Material/hover1.png"),auto;
 }
