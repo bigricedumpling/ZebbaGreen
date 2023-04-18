@@ -17,7 +17,7 @@ html, body {
 
 
 body {
-  cursor: url('/Material/ico/cur11.png'), auto;
+  cursor: url('https://bigricedumpling.github.io/zebbaGreen/Material/ico/cur11.png'), auto;
   /* overflow: hidden; */
 }
 
@@ -39,17 +39,17 @@ body {
 
 .header .wenzi a:hover span {
   font-family: "boldfont"; /* 鼠标 hover 时修改字体 */
-  cursor: url("/Material/hover1.png"),auto;
-  cursor: url("/Material/hover1.png"),auto;
+  cursor: url("https://bigricedumpling.github.io/zebbaGreen/Material/hover1.png"),auto;
+  cursor: url("https://bigricedumpling.github.io/zebbaGreen/Material/hover1.png"),auto;
 }
 
 #fishhead:hover img {
-  content: url('/Material/pictures/header_head-green-33.png');
-  cursor: url("/Material/hover1.png"),auto;
+  content: url('https://bigricedumpling.github.io/zebbaGreen/Material/pictures/header_head-green-33.png');
+  cursor: url("https://bigricedumpling.github.io/zebbaGreen/Material/hover1.png"),auto;
 }
 #fishtail:hover img {
-  content: url('/Material/pictures/header_head-green-34.png');
-  cursor: url("/Material/hover1.png"),auto;
+  content: url('https://bigricedumpling.github.io/zebbaGreen/Material/pictures/header_head-green-34.png');
+  cursor: url("https://bigricedumpling.github.io/zebbaGreen/Material/hover1.png"),auto;
 }
 
 /* *:hover {
@@ -57,18 +57,18 @@ body {
 } */
 
 *:active {
-  cursor: url('/Material/ico/cur22.png'), auto;
+  cursor: url('https://bigricedumpling.github.io/zebbaGreen/Material/ico/cur22.png'), auto;
 }
 
 
 .swiper-button-prev:hover{
-  cursor: url("/Material/hover1.png"),auto;
+  cursor: url("https://bigricedumpling.github.io/zebbaGreen/Material/hover1.png"),auto;
 }
 
 
 .swiper-button-prev {
 
-  background-image: url("/Material/some-else/n-n-left-button1.png") !important;
+  background-image: url("https://bigricedumpling.github.io/zebbaGreen/Material/some-else/n-n-left-button1.png") !important;
   background-size: contain; /* 设置背景图片适应按钮大小 */
   background-repeat: no-repeat; /* 禁止背景图片平铺 */
   background-position: center center;
@@ -77,7 +77,7 @@ body {
 }
 
 .swiper-button-next {
-  background-image: url("/Material/some-else/n-n-right-button1.png") !important;
+  background-image: url("https://bigricedumpling.github.io/zebbaGreen/Material/some-else/n-n-right-button1.png") !important;
   background-size: contain; /* 设置背景图片适应按钮大小 */
   background-repeat: no-repeat; /* 禁止背景图片平铺 */
   background-position: center center;
@@ -97,7 +97,7 @@ body {
   justify-content: center;
   /* color: var(--swiper-navigation-color, var(--swiper-theme-color)); */
   scale: 1.5;
-  cursor: url("/Material/hover1.png"),auto;
+  cursor: url("https://bigricedumpling.github.io/zebbaGreen/Material/hover1.png"),auto;
 }
 .swiper-button-next:hover,
 .swiper-button-prev:hover {
@@ -107,19 +107,19 @@ width: 49px;
 height: 46px;
 margin-top: -15px;
 z-index: 10;
-cursor: url("/Material/hover1.png"),auto;
+cursor: url("https://bigricedumpling.github.io/zebbaGreen/Material/hover1.png"),auto;
 display: flex;
 align-items: center;
 justify-content: center;
 }
 .swiper-button-prev:hover {
-  background-image: url('/Material/some-else/n-n-left-button2.png')!important;
+  background-image: url('https://bigricedumpling.github.io/zebbaGreen/Material/some-else/n-n-left-button2.png')!important;
   background-size: contain; /* 设置背景图片适应按钮大小 */
   background-repeat: no-repeat; /* 禁止背景图片平铺 */
   background-position: center center;
 }
 .swiper-button-next:hover {
-  background-image: url('/Material/some-else/n-n-right-button2.png')!important;
+  background-image: url('https://bigricedumpling.github.io/zebbaGreen/Material/some-else/n-n-right-button2.png')!important;
   background-size: contain; /* 设置背景图片适应按钮大小 */
   background-repeat: no-repeat; /* 禁止背景图片平铺 */
   background-position: center center;
@@ -151,29 +151,29 @@ justify-content: center;
 
 @font-face {
   font-family: "thinfont";
-  src: url("/Addons/Fonts/thin.OTF");
+  src: url("https://bigricedumpling.github.io/zebbaGreen/Addons/Fonts/thin.OTF");
 }
 
 @font-face {
   font-family: "mediumfont";
-  src: url("/Addons/Fonts/mmm.TTF");
+  src: url("https://bigricedumpling.github.io/zebbaGreen/Addons/Fonts/mmm.TTF");
 }
 
 @font-face {
   font-family: "boldfont";
-  src: url("/Addons/Fonts/bold.TTF");
+  src: url("https://bigricedumpling.github.io/zebbaGreen/Addons/Fonts/bold.TTF");
 }
 @font-face {
   font-family: "bianzi";
-  src: url("/Addons/Fonts/bianzi.TTF");
+  src: url("https://bigricedumpling.github.io/zebbaGreen/Addons/Fonts/bianzi.TTF");
 }
 @font-face {
   font-family: "mullerthin";
-  src: url("/Addons/Fonts/MullerNextExpandedTrial-Regular.otf");
+  src: url("https://bigricedumpling.github.io/zebbaGreen/Addons/Fonts/MullerNextExpandedTrial-Regular.otf");
 }
 @font-face {
   font-family: "fzbianzi";
-  src: url("/Addons/Fonts/方正兰亭黑.TTF");
+  src: url("https://bigricedumpling.github.io/zebbaGreen/Addons/Fonts/方正兰亭黑.TTF");
 }
 
 
@@ -195,12 +195,12 @@ justify-content: center;
   top: 90vh;
   right: 1vw;
   z-index: 999;
-  cursor: url("/Material/hover1.png"),auto;
+  cursor: url("https://bigricedumpling.github.io/zebbaGreen/Material/hover1.png"),auto;
 }
 .retry:hover{
-  cursor: url("/Material/hover1.png"),auto;
+  cursor: url("https://bigricedumpling.github.io/zebbaGreen/Material/hover1.png"),auto;
 }
 .retry:hover img{
-  content: url("/Material/retry2.png");
-  cursor: url("/Material/hover1.png"),auto;
+  content: url("https://bigricedumpling.github.io/zebbaGreen/Material/retry2.png");
+  cursor: url("https://bigricedumpling.github.io/zebbaGreen/Material/hover1.png"),auto;
 }
